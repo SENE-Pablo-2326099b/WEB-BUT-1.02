@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOODIIFY</title>
+  <link rel="stylesheet" href="/Styles/styles copy.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="menu-icon">☰</div>
+      <div class="logo">😊</div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <h1>MOODIIFY</h1>
+      <div class="description">A Platform That Adapts to Your Mood</div>
+      <button class="quiz-button" onclick="openQuiz()">Access to quiz</button>
+      <div class="details">
+        Discover how MOODIIFY personalizes your experience based on your emotional state. Take a quiz and explore the possibilities.
+      </div>
+    </main>
+
+    <!-- Quiz Modal -->
+    <div class="quiz-modal" id="quiz-modal">
+      <div class="quiz-content">
+        <h2>MOODIIFY</h2>
+        <p class="question">PlaceHolder_Question</p>
+        <form>
+          <label><input type="radio" name="response" value="1"> Response 1</label><br>
+          <label><input type="radio" name="response" value="2"> Response 2</label><br>
+          <label><input type="radio" name="response" value="3"> Response 3</label><br>
+          <label><input type="radio" name="response" value="4"> Response 4</label><br>
+          <label><input type="radio" name="response" value="5"> Response 5</label><br>
+          <label><input type="radio" name="response" value="6"> Response 6</label><br>
+          <label><input type="radio" name="response" value="7"> Response 7</label><br>
+          <label><input type="radio" name="response" value="8"> Response 8</label><br>
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+      </div>
+      <button class="close-button" onclick="closeQuiz()">✖</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 MOODIIFY. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
