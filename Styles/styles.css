@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Montserrat";
-    background: url(/img/dark-bg.png);
+    background: url(/Img/dark-bg.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -58,12 +58,10 @@ header {
   margin: 10px 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
   max-width: 59.3%;
-  z-index: 2;
 }
 
 .subtitle {
   font-size: 1rem;
-  margin: 10px 0 20px 0;
   color: white;
 }
 
@@ -138,15 +136,21 @@ header {
 
 /* Quiz css */
 
-
 .question {
   font-size: 1.5rem;
 }
 
+.question-text {
+  font-size: 1.5rem;
+}
+
 .options {
-  margin : 1em;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+  margin-left: 0.7rem;
   display: grid;
   grid-row-gap: 0.5em;
+  grid-auto-columns:max-content;
 }
 
 .answer-button {
@@ -164,5 +168,36 @@ input[type="radio"]:checked + label {
   background-clip: text ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transform: scale(1);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 1.3rem;
+  cursor: pointer;
+}
+
+input[type="radio"] + label::before,
+input[type="radio"] + label::after {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0.4rem;
+  left: -0.1rem;
+  content:'';
+  width: 1rem;
+  height: 1rem; 
+  border-radius: 1rem;
+}
+
+input[type="radio"] + label::before {
+  border: 2.9px solid #fff;
+  background-color: None;
+}
+
+input[type="radio"]:checked + label::after {
+  background-color: #fff;
 }
