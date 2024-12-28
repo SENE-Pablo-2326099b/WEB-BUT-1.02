@@ -1,18 +1,28 @@
 /* main css dark mode */
 * {
-    font-family: "Montserrat";
+    box-sizing: border-box;
+
 }
 
 @font-face {
-    font-family: "Montserrat";
+    font-family: "Montserrat-bold";
     src: url(/Fonts/Montserrat/Montserrat/static/Montserrat-Bold.ttf);
 }
 
+@font-face {
+  font-family: "Montserrat-regular";
+  src: url(/Fonts/Montserrat/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBoldItalic";
+  src: url(/Fonts/Montserrat/Montserrat/static/Montserrat-SemiBoldItalic.ttf);
+}
 body {
     margin: 0;
     padding: 0;
-    font-family: "Montserrat";
-    background: url(/img/dark-bg.png);
+    font-family: "Montserrat-bold";
+    background: url(/Img/dark-bg.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -23,6 +33,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100rem;
+  width: 60rem;
+  /* margin: ; */
 }
 
 .container {
@@ -44,26 +58,29 @@ header {
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: bold;
-  margin: 20px 0;
+  margin-top: 5px;
+  margin-bottom: 1px;
   z-index: 2;
   color: white;
 }
 
 .card {
+  font-family: "Montserrat-regular";
   background: rgba(50, 50, 50, 0.75);
   border-radius: 10px;
-  padding: 20px;
-  margin: 10px 0;
+  padding: 40px;
+  margin: 20px 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
   max-width: 59.3%;
   z-index: 2;
 }
 
 .subtitle {
-  font-size: 1rem;
-  margin: 10px 0 20px 0;
+  font-family: "Montserrat-SemiBoldItalic";
+  font-size: 0.8rem;
+  margin: 5px 0 20px 0;
   color: white;
 }
 
@@ -106,26 +123,19 @@ header {
   font-size: 2rem;
 }
 
-.menu-icon {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.icon-menuBurger {
+  display: block;
+  width: 50px;
+  margin-top: 15%;
+  margin-left : 5px;
 }
 
-.menu-icon span {
-    display: block;
-    width: 35px;
-    height: 5px;
-    background-color: white;
-    margin: 3px 1.5em;
-    border-radius: 28px;
-}
 
 .logo {
   width: 75px;
-  display: inline-block;
-  margin: 0px 1.5em;
+  /* display: inline-block; */
+  margin-right: 20px;
+  margin-top: 15%;
 }
 
 .logo:hover {
@@ -165,4 +175,84 @@ input[type="radio"]:checked + label {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(1);
+}
+
+
+/*Navbar*/
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Cachée hors écran */
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: left 0.3s ease;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin: 10px 0;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.2s ease;
+}
+
+.nav-menu a:hover {
+  color: #ff00d4;
+}
+
+.nav-open {
+  left: 0; /* Déplace la navbar pour qu'elle soit visible */
+}
+
+.main-content {
+  transition: transform 0.3s ease;
+}
+
+.main-shift {
+  transform: translateX(-300px); /* Décale le contenu principal */
+} */
+
+
+
+/* Link reset */
+
+a:link {
+  color: inherit; /* Définit la couleur du lien non visité (hérite du parent) */
+  text-decoration: none; /* Enlève le soulignement si nécessaire */
+}
+
+a:visited {
+  color: inherit; /* Garde la même couleur que les liens non visités */
+  text-decoration: none; /* Enlève le soulignement si nécessaire */
+}
+
+a:hover {
+  color: #ff00d4; /* Change la couleur au survol (optionnel) */
+  text-decoration: underline; /* Ajoute un soulignement au survol */
+}
+
+a:active {
+  color: #ff5500; /* Change la couleur quand le lien est cliqué */
 }

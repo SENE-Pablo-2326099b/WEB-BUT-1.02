@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MOODIIFY</title>
-  <link rel="stylesheet" href="/Styles/styles.css">
-  <link rel="icon" href="Img/dark-logo.ico">
-</head>
-<body>
-  <div class="container">
-    <!-- Header -->
-    <header>
-      <div class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <p>
-        <a href="index.html">
-          <img class="logo" src='/Img/dark-logo.png' alt="/index.html">
-        </a>
-      </p>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MOODIIFY</title>
+        <link rel="stylesheet" href="/Styles/styles.css">
+        <link rel="icon" href="Img/dark-logo.ico">
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header -->
+            <header>
+                <!-- NavBar -->
+                <nav class="navbar">
+                    <img class="icon-menuBurger" src="/Img/hamburgerNavbarIcon.png" alt="Menu" id="menuToggle">
+                    <div class="nav-menu">
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="terms.html">Terms And Policies</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                                
+                <p>
+                    <a href="index.html">
+                        <img class="logo" src="/Img/dark-logo.png" alt="/index.html">
+                    </a>
+                </p>
+            </header>
 
-    <!-- Main Content -->
-    <main>
-      <h1 class="title">MOODIIFY</h1>
+            <!-- Main Content -->
+            <main>
+                
+                <h1 class="title">MOODIIFY</h1>
 
-      <div class="card">
-        <p class="subtitle">Because you deserve to listen to the music that describes you.</p>
-      </div>
+                <div class="carfd">
+                    <p class="subtitle">Because you deserve to listen to the music that describes you.</p>
+                </div>
 
-      <a href="/quiz.html">
-        <button class="quiz-button"> <span class="button-text">Access <br>quiz</span> </button>
-      </a>
-
-      <div class="card">
-        <p class="welcome">WELCOME ON <br> <span class="brand">MOODIIFY</span></p>
-        <p>
-          The website that gives you a spotify playlist depending on how you feel. All you have to do is take the quiz using the "Access quiz" button and answer we ask you so we can better determine how do you feel.<br>
-          all of the playlist are handpicked by our wonderful team here at Moodiify©. There are hover 15 playlist you listen ! During each question you can only choose one answer, so choose wisely.
-        </p>
-      </div>
-    </main>
-  </div>
-</body>
+                <div class="card">
+                    <p>
+                        The website that curates Spotify playlists based on your mood. Take the quiz using the <strong> 'Access quiz' button</strong>, and our team at Moodiify© will handpick one of over 15 playlists just for you. Choose your answers wisely!
+                    </p>
+                    <p>
+                        We hope you enjoy the music we have chosen for you. If you have any questions or concerns, please contact us using the "Contact Us" button.
+                    </p>
+                </div>
+                <a href="/quiz.html" class="quiz-button">
+                    <span class="button-text">Access <br>quiz</span>
+                </a>
+                <p>
+                    <a href="about.html">About Us</a> | <a href="contact.html">Contact Us</a> | <a href="terms.html">Terms And Policies</a>
+                </p>
+            </main>
+        </div>
+        <script src="/Js/app.js"></script>
+    </body>
 </html>
