@@ -160,6 +160,7 @@ header {
   background-clip: text ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  cursor: pointer;
 }
 
 input[type="radio"]:checked + label {
@@ -200,4 +201,11 @@ input[type="radio"] + label::before {
 
 input[type="radio"]:checked + label::after {
   background-color: #fff;
+}
+
+/* Playlist page */
+.playlist-image {
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 1em ;
 }
