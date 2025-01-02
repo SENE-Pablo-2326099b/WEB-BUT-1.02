@@ -239,20 +239,20 @@ transform: translateX(-300px); /* Décale le contenu principal */
 /* Link reset */
 
 a:link {
-color: inherit; /* Définit la couleur du lien non visité (hérite du parent) */
-text-decoration: none; /* Enlève le soulignement si nécessaire */
-}
+color: inherit; 
+text-decoration: none;
 
 a:visited {
-color: inherit; /* Garde la même couleur que les liens non visités */
-text-decoration: none; /* Enlève le soulignement si nécessaire */
+color: inherit; 
+text-decoration: none;
 }
 
 a:hover {
-color: #ff00d4; /* Change la couleur au survol (optionnel) */
-text-decoration: underline; /* Ajoute un soulignement au survol */
+color: #ff00d4;
+text-decoration: underline;
 }
 
 a:active {
-color: #ff5500; /* Change la couleur quand le lien est cliqué */
+color: #ff5500;
+}
 }
