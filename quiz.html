@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,29 @@
   <link rel="stylesheet" href="/Styles/styles.css">
   <link rel="icon" href="Img/dark-logo.ico">
 </head>
+
 <body>
   <div class="container">
     <!-- Header -->
     <header>
       <!-- NavBar -->
       <nav class="navbar">
-          <img class="icon-menuBurger" src="/Img/hamburgerNavbarIcon.png" alt="Menu" id="menuToggle">
-          <div class="nav-menu">
-              <ul>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                  <li><a href="terms.html">Terms And Policies</a></li>
-              </ul>
-          </div>
+        <img class="icon-menuBurger" src="/Img/hamburgerNavbarIcon.png" alt="Menu" id="menuToggle">
+        <div class="nav-menu">
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="terms.html">Terms And Policies</a></li>
+          </ul>
+        </div>
       </nav>
-                      
+
       <p>
-          <a href="index.html">
-              <img class="logo" src="/Img/dark-logo.png" alt="/index.html">
-          </a>
+        <a href="index.html">
+          <img class="logo" src="/Img/dark-logo.png" alt="/index.html">
+        </a>
       </p>
-  </header>
+    </header>
 
     <!-- Main Content -->
 
@@ -38,112 +40,114 @@
       <div class="card">
         <p class="question-text">How do you feel today ?</p>
         <form>
-            <div class="question">
-                <div class="options">
-                  <div>
-                    <input type="radio" name="question1" id="option1" value="option1" checked>
-                    <label for="option1">Happy</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="question1" id="option2" value="option2">
-                    <label for="option2">Sad</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="question1" id="option3" value="option3">
-                    <label for="option3">Angry</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="question1" id="option4" value="option4">
-                    <label for="option4">Excited</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="question1" id="option5" value="option5">
-                    <label for="option5">Tired</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="question1" id="option6" value="option6">
-                    <label for="option6">Stressed</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="question1" id="option7" value="option7">
-                    <label for="option7">Moody</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="question1" id="option8" value="option8">
-                    <label for="option8">Adventurous</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="question1" id="option9" value="option9">
-                    <label for="option9">Reflective</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="question1" id="option10" value="option10">
-                    <label for="option10">Lonely</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="question1" id="option11" value="option11">
-                    <label for="option11">Silly</label>
-                  </div>
-                  <div>
-                    <input type="radio" name="question1" id="option12" value="option12">
-                    <label for="option12">Nostalgic</label>
-                  </div>
-                </div>
-                <button class="quiz-button"> <span class="button-text"> <input class="answer-button" type="submit" value="Next"> </span> </button>
+          <div class="question">
+            <div class="options">
+              <div>
+                <input type="radio" name="question1" id="option1" value="option1" checked>
+                <label for="option1">Happy</label>
+              </div>
+              <div>
+                <input type="radio" name="question1" id="option2" value="option2">
+                <label for="option2">Sad</label>
+              </div>
+              <div>
+                <input type="radio" name="question1" id="option3" value="option3">
+                <label for="option3">Angry</label>
+              </div>
+              <div>
+                <input type="radio" name="question1" id="option4" value="option4">
+                <label for="option4">Excited</label>
+              </div>
+              <div>
+                <input type="radio" name="question1" id="option5" value="option5">
+                <label for="option5">Tired</label>
+              </div>
+              <div>
+                <input type="radio" name="question1" id="option6" value="option6">
+                <label for="option6">Stressed</label>
+              </div>
+              <div>
+                <input type="radio" name="question1" id="option7" value="option7">
+                <label for="option7">Moody</label>
+              </div>
+              <div>
+                <input type="radio" name="question1" id="option8" value="option8">
+                <label for="option8">Adventurous</label>
+              </div>
+              <div>
+                <input type="radio" name="question1" id="option9" value="option9">
+                <label for="option9">Reflective</label>
+              </div>
+              <div>
+                <input type="radio" name="question1" id="option10" value="option10">
+                <label for="option10">Lonely</label>
+              </div>
+              <div>
+                <input type="radio" name="question1" id="option11" value="option11">
+                <label for="option11">Silly</label>
+              </div>
+              <div>
+                <input type="radio" name="question1" id="option12" value="option12">
+                <label for="option12">Nostalgic</label>
+              </div>
             </div>
-            <script>
-              document.querySelector('form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                const selectedOption = document.querySelector('input[name="question1"]:checked').value;
-                let url = '';
+            <button class="quiz-button"> <span class="button-text"> <input class="answer-button" type="submit"
+                  value="Next"> </span> </button>
+          </div>
+          <script>
+            document.querySelector('form').addEventListener('submit', function (event) {
+              event.preventDefault();
+              const selectedOption = document.querySelector('input[name="question1"]:checked').value;
+              let url = '';
 
-                switch (selectedOption) {
-                  case 'option1':
-                    url = 'happy.html';
-                    break;
-                  case 'option2':
-                    url = 'sad.html';
-                    break;
-                  case 'option3':
-                    url = 'angry.html';
-                    break;
-                  case 'option4':
-                    url = 'excited.html';
-                    break;
-                  case 'option5':
-                    url = 'tired.html';
-                    break;
-                  case 'option6':
-                    url = 'stressed.html';
-                    break;
-                  case 'option7':
-                    url = 'moody.html';
-                    break;
-                  case 'option8':
-                    url = 'adventurous.html';
-                    break;
-                  case 'option9':
-                    url = 'reflective.html';
-                    break;
-                  case 'option10':
-                    url = 'lonely.html';
-                    break;
-                  case 'option11':
-                    url = 'silly.html';
-                    break;
-                  case 'option12':
-                    url = 'nostalgic.html';
-                    break;
-                  default:
-                    url = 'index.html';
-                }
+              switch (selectedOption) {
+                case 'option1':
+                  url = 'happy.html';
+                  break;
+                case 'option2':
+                  url = 'sad.html';
+                  break;
+                case 'option3':
+                  url = 'angry.html';
+                  break;
+                case 'option4':
+                  url = 'excited.html';
+                  break;
+                case 'option5':
+                  url = 'tired.html';
+                  break;
+                case 'option6':
+                  url = 'stressed.html';
+                  break;
+                case 'option7':
+                  url = 'moody.html';
+                  break;
+                case 'option8':
+                  url = 'adventurous.html';
+                  break;
+                case 'option9':
+                  url = 'reflective.html';
+                  break;
+                case 'option10':
+                  url = 'lonely.html';
+                  break;
+                case 'option11':
+                  url = 'silly.html';
+                  break;
+                case 'option12':
+                  url = 'nostalgic.html';
+                  break;
+                default:
+                  url = 'index.html';
+              }
 
-                window.location.href = url;
-              });
-            </script>
+              window.location.href = url;
+            });
+          </script>
         </form>
       </div>
     </main>
   </div>
 </body>
+
 </html>
