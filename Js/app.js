@@ -2,25 +2,25 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.getElementById('menuToggle');
+    const menuBurger = document.getElementById('menuBurger');
     const navMenu = document.querySelector('.nav-menu');
     const mainContent = document.querySelector('main');
     const body = document.body;
 
     // Ouvrir/Fermer 
-    menuToggle.addEventListener('click', () => {
-        const isOpen = navMenu.classList.contains('nav-open');
+    menuBurger.addEventListener('click', () => {
+        const Open = navMenu.classList.contains('nav-open');
         
-        if (isOpen) {
-            navMenu.classList.remove('nav-open');
-        } else {
+        if (!Open) {
             navMenu.classList.add('nav-open');
+        } else {
+            navMenu.classList.remove('nav-open');
         }
     });
 
     // Fermer la navbar en cliquant en dehors
-    body.addEventListener('click', (dehors) => {
-        if (!navMenu.contains(dehors.target) && !menuToggle.contains(dehors.target)) {
+    body.addEventListener('click', (sortir) => {
+        if (!navMenu.contains(sortir.target) && !menuBurger.contains(sortir.target)) {
             navMenu.classList.remove('nav-open');
             mainContent.classList.remove('main-shift');
         }

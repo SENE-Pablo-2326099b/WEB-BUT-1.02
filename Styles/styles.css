@@ -29,6 +29,82 @@ body {
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .card {
+    padding: 20px;
+    max-width: 90%;
+    margin: 10px 0;
+  }
+
+  .subtitle {
+    font-size: 0.7rem;
+  }
+
+  .quiz-button {
+    padding: 8px 40px;
+    font-size: 0.9rem;
+  }
+
+  .icon-menuBurger, .logo {
+    width: 40px;
+    margin-top: 10%;
+  }
+
+  .nav-menu {
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-family: "Montserrat-regular";
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .card {
+    padding: 15px;
+    max-width: 95%;
+  }
+
+  .quiz-button {
+    padding: 6px 30px;
+    font-size: 0.8rem;
+  }
+
+  .subtitle {
+    font-size: 0.6rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-menu ul {
+    font-size: 1.2rem;
+  }
+
+  .icon-menuBurger, .logo {
+    display: none; /* Masquer les icônes non essentielles */
+  }
+
+  .answer-button {
+    font-size: 20px;
+  }
+}
+
+
 main {
 display: flex;
 flex-direction: column;
@@ -128,6 +204,7 @@ display: block;
 width: 50px;
 margin-top: 15%;
 margin-left : 5px;
+z-index: 1;
 }
 
 
@@ -148,9 +225,58 @@ filter: hue-rotate(300deg);
 
 /* Quiz css */
 
+input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="radio"]:hover {
+  transform: scale(1.2);
+}
+
+input[type="radio"]:checked {
+  background: -webkit-linear-gradient(135deg, rgb(255, 234, 234) 0%, rgb(255, 236, 62) 25%, rgb(247, 31, 232) 100%);
+  border: none;
+}
+ 
+label {
+  font-family: "Montserrat-regular";
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: color 1s ease;
+} 
+
+.optionLigne {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.question-text{
+  font-family: 'Montserrat-Bold';
+}
 
 .question {
-font-size: 1.5rem;
+font-size: 1rem;
+font-family: 'Montserrat-Regular';
+
 }
 
 .options {
@@ -159,6 +285,14 @@ display: grid;
 grid-row-gap: 0.5em;
 }
 
+.optionLigne {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+
+/*Bouton Quizz ''Next*/
 .answer-button {
 border: none;
 font-size: 25px;
@@ -170,7 +304,7 @@ background-clip: text ;
 
 input[type="radio"]:checked + label {
 border: none;
-background: -webkit-linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,247,173,1) 50%, rgba(255,169,249,1) 100%);
+background: -webkit-linear-gradient(135deg, rgba(255,255,255,1) 0%, rgb(255, 239, 94) 50%, rgb(255, 111, 245) 100%);
 background-clip: text ;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -226,14 +360,6 @@ color: #ff00d4;
 left: 0; /* Déplace la navbar pour qu'elle soit visible */
 }
 
-.main-content {
-transition: transform 0.3s ease;
-}
-
-.main-shift {
-transform: translateX(-300px); /* Décale le contenu principal */
-} */
-
 
 
 /* Link reset */
@@ -253,6 +379,6 @@ text-decoration: underline;
 }
 
 a:active {
-color: #ff5500;
+color: #642100;
 }
 }
