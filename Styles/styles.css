@@ -1,252 +1,237 @@
 /* main css dark mode */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 
 }
 
 @font-face {
-    font-family: "Montserrat-bold";
-    src: url(/Fonts/Montserrat/Montserrat/static/Montserrat-Bold.ttf);
+  font-family: "Montserrat-bold";
+  src: url(/Fonts/Montserrat/Montserrat/static/Montserrat-Bold.ttf);
 }
 
 @font-face {
-  font-family: "Montserrat-regular";
-  src: url(/Fonts/Montserrat/Montserrat/static/Montserrat-Regular.ttf);
+font-family: "Montserrat-regular";
+src: url(/Fonts/Montserrat/Montserrat/static/Montserrat-Regular.ttf);
 }
 
 @font-face {
-  font-family: "Montserrat-SemiBoldItalic";
-  src: url(/Fonts/Montserrat/Montserrat/static/Montserrat-SemiBoldItalic.ttf);
+font-family: "Montserrat-SemiBoldItalic";
+src: url(/Fonts/Montserrat/Montserrat/static/Montserrat-SemiBoldItalic.ttf);
 }
 body {
-    margin: 0;
-    padding: 0;
-<<<<<<< HEAD
-    font-family: "Montserrat-bold";
-=======
-    font-family: "Montserrat";
->>>>>>> QuizVal
-    background: url(/Img/dark-bg.png);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat-bold";
+  background: url(/Img/dark-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100rem;
-  width: 60rem;
-  /* margin: ; */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100rem;
+width: 60rem;
+/* margin: ; */
 }
 
 .container {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+position: relative;
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
 }
 
 header {
-  background: #1F2020;
-  padding: .25%;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 2px solid #3F3C3C;
-  width: 100%;
+background: #1F2020;
+padding: .25%;
+display: flex;
+justify-content: space-between;
+border-bottom: 2px solid #3F3C3C;
+width: 100%;
 }
 
 .title {
-  font-size: 5rem;
-  font-weight: bold;
-  margin-top: 5px;
-  margin-bottom: 1px;
-  z-index: 2;
-  color: white;
+font-size: 5rem;
+font-weight: bold;
+margin-top: 5px;
+margin-bottom: 1px;
+z-index: 2;
+color: white;
 }
 
 .card {
-  font-family: "Montserrat-regular";
-  background: rgba(50, 50, 50, 0.75);
-  border-radius: 10px;
-  padding: 40px;
-  margin: 20px 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
-  max-width: 59.3%;
+font-family: "Montserrat-regular";
+background: rgba(50, 50, 50, 0.75);
+border-radius: 10px;
+padding: 40px;
+margin: 20px 0;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+max-width: 59.3%;
+z-index: 2;
 }
 
 .subtitle {
-<<<<<<< HEAD
-  font-family: "Montserrat-SemiBoldItalic";
-  font-size: 0.8rem;
-  margin: 5px 0 20px 0;
-=======
-  font-size: 1rem;
->>>>>>> QuizVal
-  color: white;
+font-family: "Montserrat-SemiBoldItalic";
+font-size: 0.8rem;
+margin: 5px 0 20px 0;
+color: white;
 }
 
 .quiz-button {
-  background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,247,173,1) 50%, rgba(255,169,249,1) 100%);
-  color: #fff;
-  border: none;
-  border-radius: 20px;
-  padding: 10px 50px;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,247,173,1) 50%, rgba(255,169,249,1) 100%);
+color: #fff;
+border: none;
+border-radius: 20px;
+padding: 10px 50px;
+font-weight: bold;
+cursor: pointer;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .button-text {
-  font-size: 25px;
-  background: -webkit-linear-gradient(45deg, rgba(255,208,0,1) 0%, rgba(125,3,156,1) 25%, rgba(40,41,41,1) 100%);
-  background-clip: text ;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+font-size: 25px;
+background: -webkit-linear-gradient(45deg, rgba(255,208,0,1) 0%, rgba(125,3,156,1) 25%, rgba(40,41,41,1) 100%);
+background-clip: text ;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .quiz-button:hover {
-  transform: scale(1.03);
+transform: scale(1.03);
 }
 
 .quiz-button:active {
-  transform: scale(0.98);
+transform: scale(0.98);
 }
 .welcome {
-  font-size: 1rem;
-  font-style: italic;
+font-size: 1rem;
+font-style: italic;
 }
 
 .brand {
-  font-weight: bold;
-  color: white;
-  font-style: normal;
-  font-size: 2rem;
+font-weight: bold;
+color: white;
+font-style: normal;
+font-size: 2rem;
 }
 
 .icon-menuBurger {
-  display: block;
-  width: 50px;
-  margin-top: 15%;
-  margin-left : 5px;
+display: block;
+width: 50px;
+margin-top: 15%;
+margin-left : 5px;
 }
 
 
 .logo {
-  width: 75px;
-  /* display: inline-block; */
-  margin-right: 20px;
-  margin-top: 15%;
+width: 75px;
+/* display: inline-block; */
+margin-right: 20px;
+margin-top: 15%;
 }
 
 .logo:hover {
-  filter: hue-rotate(250deg);
+filter: hue-rotate(250deg);
 }
 
 .logo:active {
-  filter: hue-rotate(300deg);
+filter: hue-rotate(300deg);
 }
 
 /* Quiz css */
 
-.question {
-  font-size: 1.5rem;
-}
 
-.question-text {
-  font-size: 1.5rem;
+.question {
+font-size: 1.5rem;
 }
 
 .options {
-  margin-bottom: 1em;
-  margin-top: 0.5em;
-  margin-left: 0.7rem;
-  display: grid;
-  grid-row-gap: 0.5em;
-  grid-auto-columns:max-content;
+margin : 1em;
+display: grid;
+grid-row-gap: 0.5em;
 }
 
 .answer-button {
-  border: none;
-  font-size: 25px;
-  background: -webkit-linear-gradient(45deg, rgba(255,208,0,1) 0%, rgba(125,3,156,1) 25%, rgba(40,41,41,1) 100%);
-  background-clip: text ;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  cursor: pointer;
+border: none;
+font-size: 25px;
+background: -webkit-linear-gradient(45deg, rgba(255,208,0,1) 0%, rgba(125,3,156,1) 25%, rgba(40,41,41,1) 100%);
+background-clip: text ;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 input[type="radio"]:checked + label {
-  border: none;
-  background: -webkit-linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,247,173,1) 50%, rgba(255,169,249,1) 100%);
-  background-clip: text ;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-<<<<<<< HEAD
-  transform: scale(1);
+border: none;
+background: -webkit-linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,247,173,1) 50%, rgba(255,169,249,1) 100%);
+background-clip: text ;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+transform: scale(1);
 }
 
 
 /*Navbar*/
 .navbar {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  z-index: 1000;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 20px;
+z-index: 1000;
 }
 
 .nav-menu {
-  position: fixed;
-  top: 0;
-  left: -300px; /* Cachée hors écran */
-  width: 300px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: left 0.3s ease;
+position: fixed;
+top: 0;
+left: -300px; /* Cachée hors écran */
+width: 300px;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transition: left 0.3s ease;
 }
 
 .nav-menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+list-style: none;
+padding: 0;
+margin: 0;
 }
 
 .nav-menu li {
-  margin: 10px 0;
+margin: 10px 0;
 }
 
 .nav-menu a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
-  transition: color 0.2s ease;
+color: white;
+text-decoration: none;
+font-size: 1.5rem;
+transition: color 0.2s ease;
 }
 
 .nav-menu a:hover {
-  color: #ff00d4;
+color: #ff00d4;
 }
 
 .nav-open {
-  left: 0; /* Déplace la navbar pour qu'elle soit visible */
+left: 0; /* Déplace la navbar pour qu'elle soit visible */
 }
 
 .main-content {
-  transition: transform 0.3s ease;
+transition: transform 0.3s ease;
 }
 
 .main-shift {
-  transform: translateX(-300px); /* Décale le contenu principal */
+transform: translateX(-300px); /* Décale le contenu principal */
 } */
 
 
@@ -254,62 +239,20 @@ input[type="radio"]:checked + label {
 /* Link reset */
 
 a:link {
-  color: inherit; /* Définit la couleur du lien non visité (hérite du parent) */
-  text-decoration: none; /* Enlève le soulignement si nécessaire */
+color: inherit; /* Définit la couleur du lien non visité (hérite du parent) */
+text-decoration: none; /* Enlève le soulignement si nécessaire */
 }
 
 a:visited {
-  color: inherit; /* Garde la même couleur que les liens non visités */
-  text-decoration: none; /* Enlève le soulignement si nécessaire */
+color: inherit; /* Garde la même couleur que les liens non visités */
+text-decoration: none; /* Enlève le soulignement si nécessaire */
 }
 
 a:hover {
-  color: #ff00d4; /* Change la couleur au survol (optionnel) */
-  text-decoration: underline; /* Ajoute un soulignement au survol */
+color: #ff00d4; /* Change la couleur au survol (optionnel) */
+text-decoration: underline; /* Ajoute un soulignement au survol */
 }
 
 a:active {
-  color: #ff5500; /* Change la couleur quand le lien est cliqué */
+color: #ff5500; /* Change la couleur quand le lien est cliqué */
 }
-=======
-}
-
-input[type="radio"] {
-  display: none;
-}
-
-input[type="radio"] + label {
-  position: relative;
-  padding-left: 1.3rem;
-  cursor: pointer;
-}
-
-input[type="radio"] + label::before,
-input[type="radio"] + label::after {
-  display: block;
-  position: absolute;
-  box-sizing: border-box;
-  bottom: 0.4rem;
-  left: -0.1rem;
-  content:'';
-  width: 1rem;
-  height: 1rem; 
-  border-radius: 1rem;
-}
-
-input[type="radio"] + label::before {
-  border: 2.9px solid #fff;
-  background-color: None;
-}
-
-input[type="radio"]:checked + label::after {
-  background-color: #fff;
-}
-
-/* Playlist page */
-.playlist-image {
-  object-fit: cover;
-  border-radius: 10px;
-  margin: 1em ;
-}
->>>>>>> QuizVal
