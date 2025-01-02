@@ -46,4 +46,4 @@ Au minimum tous les points suivants doivent être respectés :
 - Validation W3C de toutes vos pages HTML (réglage HTML5) (5 %) ;
 - Validation W3C de toutes vos pages CSS (réglage CSS niveau 3 avec aucun avertissement et gestion des extensions propriétaires comme avertissement) (2,5 %) ;
 - Perfectionnement avec l’ajout de fonctionnalités et l’utilisation d’un système de gestion de version comme GitHub (10 %).✅
-
+w
