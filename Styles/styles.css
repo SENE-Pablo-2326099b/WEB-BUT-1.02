@@ -21,7 +21,11 @@
 body {
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     font-family: "Montserrat-bold";
+=======
+    font-family: "Montserrat";
+>>>>>>> QuizVal
     background: url(/Img/dark-bg.png);
     background-size: cover;
     background-position: center;
@@ -74,13 +78,16 @@ header {
   margin: 20px 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
   max-width: 59.3%;
-  z-index: 2;
 }
 
 .subtitle {
+<<<<<<< HEAD
   font-family: "Montserrat-SemiBoldItalic";
   font-size: 0.8rem;
   margin: 5px 0 20px 0;
+=======
+  font-size: 1rem;
+>>>>>>> QuizVal
   color: white;
 }
 
@@ -148,15 +155,21 @@ header {
 
 /* Quiz css */
 
-
 .question {
   font-size: 1.5rem;
 }
 
+.question-text {
+  font-size: 1.5rem;
+}
+
 .options {
-  margin : 1em;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+  margin-left: 0.7rem;
   display: grid;
   grid-row-gap: 0.5em;
+  grid-auto-columns:max-content;
 }
 
 .answer-button {
@@ -166,6 +179,7 @@ header {
   background-clip: text ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  cursor: pointer;
 }
 
 input[type="radio"]:checked + label {
@@ -174,6 +188,7 @@ input[type="radio"]:checked + label {
   background-clip: text ;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+<<<<<<< HEAD
   transform: scale(1);
 }
 
@@ -256,3 +271,45 @@ a:hover {
 a:active {
   color: #ff5500; /* Change la couleur quand le lien est cliqué */
 }
+=======
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  position: relative;
+  padding-left: 1.3rem;
+  cursor: pointer;
+}
+
+input[type="radio"] + label::before,
+input[type="radio"] + label::after {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0.4rem;
+  left: -0.1rem;
+  content:'';
+  width: 1rem;
+  height: 1rem; 
+  border-radius: 1rem;
+}
+
+input[type="radio"] + label::before {
+  border: 2.9px solid #fff;
+  background-color: None;
+}
+
+input[type="radio"]:checked + label::after {
+  background-color: #fff;
+}
+
+/* Playlist page */
+.playlist-image {
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 1em ;
+}
+>>>>>>> QuizVal

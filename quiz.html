@@ -31,6 +31,7 @@
   </header>
 
     <!-- Main Content -->
+
     <main>
       <h1 class="title">MOODIIFY</h1>
 
@@ -90,6 +91,56 @@
                 </div>
                 <button class="quiz-button"> <span class="button-text"> <input class="answer-button" type="submit" value="Next"> </span> </button>
             </div>
+            <script>
+              document.querySelector('form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const selectedOption = document.querySelector('input[name="question1"]:checked').value;
+                let url = '';
+
+                switch (selectedOption) {
+                  case 'option1':
+                    url = 'happy.html';
+                    break;
+                  case 'option2':
+                    url = 'sad.html';
+                    break;
+                  case 'option3':
+                    url = 'angry.html';
+                    break;
+                  case 'option4':
+                    url = 'excited.html';
+                    break;
+                  case 'option5':
+                    url = 'tired.html';
+                    break;
+                  case 'option6':
+                    url = 'stressed.html';
+                    break;
+                  case 'option7':
+                    url = 'moody.html';
+                    break;
+                  case 'option8':
+                    url = 'adventurous.html';
+                    break;
+                  case 'option9':
+                    url = 'reflective.html';
+                    break;
+                  case 'option10':
+                    url = 'lonely.html';
+                    break;
+                  case 'option11':
+                    url = 'silly.html';
+                    break;
+                  case 'option12':
+                    url = 'nostalgic.html';
+                    break;
+                  default:
+                    url = 'index.html';
+                }
+
+                window.location.href = url;
+              });
+            </script>
         </form>
       </div>
     </main>
