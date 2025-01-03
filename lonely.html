@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MOODIIFY</title>
-  <link rel="stylesheet" href="/Styles/styles.css">
-  <link rel="icon" href="Img/dark-logo.ico">
+  <link id="stylesheet" rel="stylesheet" href="/Styles/styles.css">
+  <link id="favicon" rel="icon" href="Img/dark-logo.ico">
 </head>
 <body>
   <div class="container">
@@ -13,18 +13,23 @@
     <header>
       <!-- NavBar -->
       <nav class="navbar">
-        <img class="icon-menuBurger" src="/Img/hamburgerNavbarIcon.png" alt="Menu" id="menuToggle">
+        <img class="icon-menuBurgerDark" src="/Img/hamburgerNavbarIconDark.png" alt="Menu" id="menuToggleDark">
+                    <img class="icon-menuBurgerLight" src="/Img/hamburgerNavbarIconLight.png" alt="Menu" id="menuToggleLight">
         <div class="nav-menu">
             <ul>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="terms.html">Terms And Policies</a></li>
+                <li><a href="#" id="changeStylesheet">Change Stylesheet</a></li>
             </ul>
         </div>
     </nav>
       <p>
         <a href="index.html">
-          <img class="logo" src='/Img/dark-logo.png' alt="/index.html">
+          <div class="logo">
+            <img class="dark-logo" src="/Img/dark-logo.png" alt="/index.html">
+            <img class="light-logo" src="/Img/light-logo.png" alt="/index.html">
+        </div>
         </a>
       </p>
     </header>
@@ -47,5 +52,6 @@
       </div>
     </main>
   </div>
+  <script src="/Js/app.js"></script>
 </body>
 </html>

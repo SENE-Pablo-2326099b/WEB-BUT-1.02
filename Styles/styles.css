@@ -125,19 +125,35 @@ header {
   font-size: 2rem;
 }
 
-.icon-menuBurger {
+.icon-menuBurgerDark {
   display: block;
   width: 50px;
   margin-top: 15%;
   margin-left: 5px;
 }
 
+.icon-menuBurgerLight {
+  display: none;
+}
 
-.logo {
+.dark-logo{
   width: 75px;
-  /* display: inline-block; */
   margin-right: 20px;
   margin-top: 15%;
+}
+
+.light-logo{
+  display:none;
+}
+
+.logo {
+  transition: filter 1s ease;
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  margin-left: auto;
 }
 
 .logo:hover {
