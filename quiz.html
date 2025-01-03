@@ -28,12 +28,10 @@
       </nav>
 
       <p>
-        <a href="index.html">
-          <div class="logo">
-            <img class="dark-logo" src="/Img/dark-logo.png" alt="/index.html">
-            <img class="light-logo" src="/Img/light-logo.png" alt="/index.html">
-        </div>
-        </a>
+        <a href="index.html" class="logo">
+          <img class="dark-logo" src="/Img/dark-logo.png" alt="/index.html">
+          <img class="light-logo" src="/Img/light-logo.png" alt="/index.html">
+  </a>
       </p>
     </header>
 
@@ -96,9 +94,9 @@
                 <label for="option12">Nostalgic</label>
               </div>
             </div>
-            <button class="quiz-button"> <span class="button-text"> <input class="answer-button" type="submit"
-                  value="Next"> </span> </button>
+            <span class="quiz-button"> <span class="button-text"> <input class="answer-button" type="submit" value="Next"> </span> </span>
           </div>
+
           <script>
             document.querySelector('form').addEventListener('submit', function (event) {
               event.preventDefault();
@@ -152,6 +150,11 @@
         </form>
       </div>
     </main>
+    <div class="body-button">
+      <a href="#">
+          <img class="arrow" src="Img/up-arrow-icon.png" alt="Back to top">
+      </a>
+  </div>
   </div>
   <script src="/Js/app.js"></script>
 </body>
