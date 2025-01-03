@@ -23,7 +23,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat-bold";
-  background: url(/Img/dark-bg.png);
+  background: url(/Img/dark-bg.webp);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -355,8 +355,7 @@ textarea {
 }
 
 /* body button */
-
-.body-button {
+#body-button {
   position:fixed;
   top: 90%;
   left: 90%;
@@ -370,7 +369,7 @@ textarea {
   text-decoration: none;
 }
 
-.body-button:hover {
+#body-button:hover {
   color: #1F2020;
   font-weight: bold;
   cursor: pointer;
