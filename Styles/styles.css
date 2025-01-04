@@ -79,7 +79,7 @@ header {
 
 .subtitle {
   font-family: "Montserrat-SemiBoldItalic";
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin: 5px 0 20px 0;
   color: white;
 }
@@ -260,9 +260,9 @@ input[type="radio"]:checked+label::after {
 .nav-menu {
   position: fixed;
   top: 0;
-  left: -200px;
+  left: -300px;
   /* Cachée hors écran */
-  width: 200px;
+  width: 300px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -358,7 +358,7 @@ textarea {
 #body-button {
   position:fixed;
   top: 90%;
-  left: 90%;
+  left: 95%;
   background: white;
   border: none;
   border-radius: 180px;
@@ -391,18 +391,26 @@ textarea {
 
 /* Format Tablette < 1280 px */
 @media screen and (max-width: 1280px)  {
-  body {
-    font-size: 16px;
+  
+  main {
+    height: 66rem;
+    width: 47rem;
+  }
+
+  .container{
+    height: 100vh;
+  }
+
+  header {
+    width: 100%;
   }
 
   .title {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .card {
-    padding: 30px;
-    margin: 15px 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .subtitle {
@@ -414,13 +422,12 @@ textarea {
     font-size: 1rem;
   }
 
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
+  .button-text {
+    font-size: 16.5px;
   }
 
   .icon-menuBurgerDark {
-    width: 45px;
+    width: 43px;
   }
 
   .dark-logo {
@@ -433,87 +440,84 @@ textarea {
 
   #body-button {
     top: 90%;
-    left: 90%;
+    left: 95%;
   }
 }
 
 
 
 
-
-
-
 /* Smartphone (largeur max < 600px) */
 @media screen and (max-width: 600px) {
-  body {
-    font-size: 14;
+
+  main {
+    height: 66;
+    width: 47rem;
   }
 
+  .container{
+    height: 100vh;
+  }
+
+  header {
+    width: 100%;
+  }
 
   .title {
     font-size: 3rem;
-    margin: 10px 0;
+    margin: 10px;
   }
 
   .card {
-    font-family: "Montserrat-regular";
-    padding: 20px;
-    margin: 10px 0;
+    padding: 40px;
+    margin: 20px;
     font-size: 0.9rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 50%;
   }
 
   .subtitle {
     font-size: 0.7rem;
+    margin: 0px;
   }
 
-
+  /*Inutile car Burger Menu Bug*/
   .nav-menu{
     position: fixed;
     top: 0;
-    left: -50px;
-    /*Cachée hors écran*/
-    width: 50px;
-  }
+    left: -200px;
 
+    width: 200px;
+  }
+  
   .quiz-button {
     padding: 8px 30px;
     font-size: 0.8rem;
+  }
+
+  .button-text {
+    font-size: 20px;
   }
 
   .navbar {
     flex-direction: column;
     align-items: flex-start;
   }
-
+  
   .icon-menuBurgerDark {
-    width: 20px;
-    margin-top: 10%;
-    display: block;
-    margin-top: 10%;
-    margin-left: 5px;
+    width: 40px;
   }
-
+  
   .dark-logo {
-    width: 50px;
-  }
-
-  .nav-menu {
-    width: 100%;
-  }
-
-  .nav-menu a {
-    font-size: 1.2rem;
+    width: 60px;
   }
 
   #body-button {
-    top: 85%;
+    top: 90%;
     left: 85%;
   }
 
-  .nav-open {
-    left: 0;
-    /* Déplace la navbar pour qu'elle soit visible */
-  }
 }
 
 

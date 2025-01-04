@@ -1,4 +1,5 @@
 // Menu Burger
+
 document.addEventListener('DOMContentLoaded', () => {
     const menuToggleDark = document.getElementById('menuToggleDark');
     const menuToggleLight = document.getElementById('menuToggleLight');
