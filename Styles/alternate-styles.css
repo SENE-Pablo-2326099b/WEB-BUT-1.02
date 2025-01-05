@@ -23,9 +23,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat-bold";
-  background: url(/Img/light-bg.webp);
+  background: url(/Img/light-bg.webp) no-repeat;
+  background-color: #ededed;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-attachment: fixed;
   color: white;
 }
@@ -50,7 +51,7 @@ main {
 
 header {
   background: #E2E2E2;
-  padding: .25%;
+  padding: 0.25%;
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid #AFAFAF;
@@ -62,7 +63,7 @@ header {
   font-weight: bold;
   margin-top: 5px;
   margin-bottom: 1px;
-  z-index: 2;
+  z-index: 1;
   color: #1F2020;
 }
 
@@ -120,10 +121,12 @@ header {
 }
 
 .brand {
+  font-size: 5rem;
   font-weight: bold;
-  color: white;
-  font-style: normal;
-  font-size: 2rem;
+  margin-top: 5px;
+  margin-bottom: 1px;
+  z-index: 1;
+  color: #1F2020;
 }
 
 .icon-menuBurgerDark {
@@ -354,6 +357,7 @@ a:active {
 
 textarea {
   resize:none;
+  width: 100%;
 }
 
 .name, .message {
@@ -413,6 +417,13 @@ header {
 .title {
   font-size: 3.5rem;
   max-width: 90%;
+  margin-top: 2em;
+}
+
+.brand {
+  font-size: 3.5rem;
+  max-width: 90%;
+  margin-top: 2em;
 }
 
 .card {
@@ -466,23 +477,25 @@ header {
 /* Smartphone (largeur max < 600px) */
 @media screen and (max-width: 600px) {
 
-main {
-  height: 100%;
-  width: 100%;
-}
+  main {
+    margin-top: 60px;
+  }
 
 .container{
   height: 100vh;
 }
 
-header {
-  width: 100%;
-}
-
 .title {
   font-size: 3rem;
   margin: 10px;
-  max-width: 400px;
+  max-width: 99%;
+  margin-top: 2em;
+}
+
+.brand {
+  font-size: 3rem;
+  margin: 10px;
+  max-width: 99%;
 }
 
 .card {
@@ -535,7 +548,7 @@ header {
 
 #body-button {
   top: 90%;
-  left: 89%;
+  left: 86%;
 }
 
 .nav-menu {
