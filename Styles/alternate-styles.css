@@ -1,385 +1,562 @@
 /* main css light mode */
 * {
-    box-sizing: border-box;
-  
-  }
-  
-  @font-face {
-    font-family: "Montserrat-bold";
-    src: url(/Fonts/Montserrat/Montserrat/static/Montserrat-Bold.ttf);
-  }
-  
-  @font-face {
-    font-family: "Montserrat-regular";
-    src: url(/Fonts/Montserrat/Montserrat/static/Montserrat-Regular.ttf);
-  }
-  
-  @font-face {
-    font-family: "Montserrat-SemiBoldItalic";
-    src: url(/Fonts/Montserrat/Montserrat/static/Montserrat-SemiBoldItalic.ttf);
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat-bold";
-    background: url(/Img/light-bg.webp);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
-  }
-  
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100rem;
-    width: 60rem;
-  }
-  
-  .container {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  header {
-    background: #E2E2E2;
-    padding: .25%;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid #AFAFAF;
-    width: 100%;
-  }
-  
-  .title {
-    font-size: 5rem;
-    font-weight: bold;
-    margin-top: 5px;
-    margin-bottom: 1px;
-    z-index: 2;
-    color: #1F2020;
-  }
-  
-  .card {
-    font-family: "Montserrat-regular";
-    background: rgba(50, 50, 50, 0.75);
-    border-radius: 10px;
-    padding: 40px;
-    margin: 20px 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
-    max-width: 59.3%;
-    z-index: 2;
-  }
-  
-  .subtitle {
-    font-family: "Montserrat-SemiBoldItalic";
-    font-size: 0.8rem;
-    margin: 5px 0 20px 0;
-    color: #1F2020;
-  }
-  
-  .quiz-button {
-    background: linear-gradient(45deg, rgba(255, 208, 0, 1) 0%, rgba(125, 3, 156, 1) 25%, rgba(40, 41, 41, 1) 100%);
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 50px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
+  box-sizing: border-box;
 
-  .button-text {
-    font-size: 25px;
-    font-weight: bold;
-    background: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 247, 173, 1) 50%, rgba(255, 169, 249, 1) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  .quiz-button:hover {
-    transform: scale(1.03);
-    text-decoration: none;
-  }
-  
-  .quiz-button:active {
-    transform: scale(0.98);
-  }
-  
-  .welcome {
-    font-size: 1rem;
-    font-style: italic;
-  }
-  
-  .brand {
-    font-weight: bold;
-    color: white;
-    font-style: normal;
-    font-size: 2rem;
-  }
-  
-  .icon-menuBurgerDark {
-    display: none;
-  }
-  
-  .icon-menuBurgerLight {
-    display: block;
-    width: 50px;
-    margin-top: 15%;
-    margin-left: 5px;
-  }
-  
-  
-  .dark-logo{
-    display:none;
-  }
-  
-  .light-logo{
-    width: 75px;
-    margin-right: 20px;
-    margin-top: 15%;
-  }
-  
-  .logo {
-    transition: filter 1s ease;
-    display: flex;
-    align-items: center;
-  }
-  
-  header .logo {
-    margin-left: auto;
-  }
+}
 
-  .logo:hover {
-    filter: hue-rotate(250deg);
-  }
-  
-  .logo:active {
-    filter: hue-rotate(300deg);
-  }
-  
-  /* Quiz css */
-  
-  .question {
-    font-size: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .question-text {
-    font-size: 1.5rem;
-  }
-  
-  .options {
-    margin-bottom: 1em;
-    margin-top: 0.5em;
-    margin-left: 0.7rem;
-    display: grid;
-    grid-row-gap: 0.5em;
-    grid-auto-columns: max-content;
-  }
-  
-  .answer-button {
-    border: none;
-    font-size: 25px;
-    font-weight: bold;
-    font-size: 25px;
-    background: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 247, 173, 1) 50%, rgba(255, 169, 249, 1) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    cursor: pointer;
-  }
-  
-  input[type="radio"]:checked+label {
-    border: none;
-    background: -webkit-linear-gradient(45deg, rgba(255, 208, 0, 1) 0%, rgba(125, 3, 156, 1) 25%, rgba(40, 41, 41, 1) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
-  input[type="radio"] {
-    display: none;
-  }
-  
-  input[type="radio"]+label {
-    position: relative;
-    padding-left: 1.3rem;
-    cursor: pointer;
-  }
-  
-  input[type="radio"]+label::before,
-  input[type="radio"]+label::after {
-    display: block;
-    position: absolute;
-    box-sizing: border-box;
-    bottom: 0.4rem;
-    left: -0.1rem;
-    content: '';
-    width: 1rem;
-    height: 1rem;
-    border-radius: 1rem;
-  }
-  
-  input[type="radio"]+label::before {
-    border: 2.9px solid #fff;
-  }
-  
-  input[type="radio"]:checked+label::after {
-    background-color: #fff;
-  }
-  
-  /* Playlist page */
-  .playlist-image {
-    object-fit: cover;
-    border-radius: 10px;
-    margin: 1em;
-  }
-  
-  
-  /*Navbar*/
-  .navbar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    z-index: 1000;
-  }
-  
-  .nav-menu {
-    position: fixed;
-    top: 0;
-    left: -300px;
-    /* Cachée hors écran */
-    width: 300px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: left 0.3s ease;
-    background: #E2E2E2;
-    border-right: 2px solid #AFAFAF;
-  }
-  
-  .nav-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .nav-menu li {
-    margin: 10px 0;
-    color:#1F2020;
-  }
-  
-  .nav-menu a {
-    color: #1F2020;
-    text-decoration: none;
-    font-size: 1.5rem;
-    transition: color 0.2s ease;
-  }
-  
-  .nav-menu a:hover {
-    color: #ff00d4;
-  }
-  
-  .nav-open {
-    left: 0;
-    /* Déplace la navbar pour qu'elle soit visible */
-  }
-  
-  .main-content {
-    transition: transform 0.3s ease;
-  }
-  
-  .main-shift {
-    transform: translateX(-300px);
-    /* Décale le contenu principal */
-  }
-  
-  /* Link reset */
-  
-  a:link {
-    color: inherit;
-    /* Définit la couleur du lien non visité (hérite du parent) */
-    text-decoration: none;
-    /* Enlève le soulignement si nécessaire */
-  }
-  
-  a:visited {
-    color: inherit;
-    /* Garde la même couleur que les liens non visités */
-    text-decoration: none;
-    /* Enlève le soulignement si nécessaire */
-  }
-  
-  a:hover {
-    color: #ff00d4;
-    /* Change la couleur au survol (optionnel) */
-    text-decoration: underline;
-    /* Ajoute un soulignement au survol */
-  }
-  
-  a:active {
-    color: #ff5500;
-    /* Change la couleur quand le lien est cliqué */
-  }
-  
-  /* email */
-  
-  .email {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 1em;
-  }
-  
-  textarea {
-    resize:none;
-  }
-  
-  .name, .message {
-    margin-bottom: 1em;
-  }
+@font-face {
+  font-family: "Montserrat-bold";
+  src: url(/Fonts/Montserrat/Montserrat/static/Montserrat-Bold.ttf);
+}
 
-  /* body button */
+@font-face {
+  font-family: "Montserrat-regular";
+  src: url(/Fonts/Montserrat/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBoldItalic";
+  src: url(/Fonts/Montserrat/Montserrat/static/Montserrat-SemiBoldItalic.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat-bold";
+  background: url(/Img/light-bg.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100rem;
+  width: 60rem;
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header {
+  background: #E2E2E2;
+  padding: .25%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #AFAFAF;
+  width: 100%;
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 1px;
+  z-index: 2;
+  color: #1F2020;
+}
+
+.card {
+  font-family: "Montserrat-regular";
+  background: rgba(50, 50, 50, 0.75);
+  border-radius: 10px;
+  padding: 40px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+  max-width: 59.3%;
+  z-index: 2;
+}
+
+.subtitle {
+  font-family: "Montserrat-SemiBoldItalic";
+  font-size: 1rem;
+  margin: 5px 0 20px 0;
+  color: #1F2020;
+}
+
+.quiz-button {
+  background: linear-gradient(45deg, rgba(255, 208, 0, 1) 0%, rgba(125, 3, 156, 1) 25%, rgba(40, 41, 41, 1) 100%);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 50px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button-text {
+  font-size: 25px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 247, 173, 1) 50%, rgba(255, 169, 249, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.quiz-button:hover {
+  transform: scale(1.03);
+  text-decoration: none;
+}
+
+.quiz-button:active {
+  transform: scale(0.98);
+}
+
+.welcome {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.brand {
+  font-weight: bold;
+  color: white;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.icon-menuBurgerDark {
+  display: none;
+}
+
+.icon-menuBurgerLight {
+  display: block;
+  width: 50px;
+  margin-top: 15%;
+  margin-left: 5px;
+}
+
+.icon-menuBurgerLight:hover {
+  cursor: pointer;
+}
+
+
+.dark-logo{
+  display:none;
+}
+
+.light-logo{
+  width: 75px;
+  margin-right: 20px;
+  margin-top: 15%;
+}
+
+.logo {
+  transition: filter 1s ease;
+  display: flex;
+  align-items: center;
+}
+
+header .logo {
+  margin-left: auto;
+}
+
+.logo:hover {
+  filter: hue-rotate(250deg);
+}
+
+.logo:active {
+  filter: hue-rotate(300deg);
+}
+
+/* Quiz css */
+
+.question {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-text {
+  font-size: 1.5rem;
+}
+
+.options {
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+  margin-left: 0.7rem;
+  display: grid;
+  grid-row-gap: 0.5em;
+  grid-auto-columns: max-content;
+}
+
+.answer-button {
+  border: none;
+  font-size: 25px;
+  font-weight: bold;
+  font-size: 25px;
+  background: -webkit-linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(255, 247, 173, 1) 50%, rgba(255, 169, 249, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked+label {
+  border: none;
+  background: -webkit-linear-gradient(45deg, rgba(255, 208, 0, 1) 0%, rgba(125, 3, 156, 1) 25%, rgba(40, 41, 41, 1) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]+label {
+  position: relative;
+  padding-left: 1.3rem;
+  cursor: pointer;
+}
+
+input[type="radio"]+label::before,
+input[type="radio"]+label::after {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 0.4rem;
+  left: -0.1rem;
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+}
+
+input[type="radio"]+label::before {
+  border: 2.9px solid #fff;
+}
+
+input[type="radio"]:checked+label::after {
+  background-color: #fff;
+}
+
+/* Playlist page */
+.playlist-image {
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 1em;
+}
+
+
+/*Navbar*/
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.nav-menu {
+  position: fixed;
+  top: 0;
+  left: -20%;
+  /* Cachée hors écran */
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: left 0.3s ease;
+  background: #E2E2E2;
+  border-right: 2px solid #AFAFAF;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin: 10px 0;
+  color:#1F2020;
+}
+
+.nav-menu a {
+  color: #1F2020;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.2s ease;
+}
+
+.nav-menu a:hover {
+  color: #ff00d4;
+}
+
+.nav-open {
+  left: 0;
+  /* Déplace la navbar pour qu'elle soit visible */
+}
+
+.main-content {
+  transition: transform 0.3s ease;
+}
+
+.main-shift {
+  transform: translateX(-300px);
+  /* Décale le contenu principal */
+}
+
+/* Link reset */
+
+a:link {
+  color: inherit;
+  /* Définit la couleur du lien non visité (hérite du parent) */
+  text-decoration: none;
+  /* Enlève le soulignement si nécessaire */
+}
+
+a:visited {
+  color: inherit;
+  /* Garde la même couleur que les liens non visités */
+  text-decoration: none;
+  /* Enlève le soulignement si nécessaire */
+}
+
+a:hover {
+  color: #ff00d4;
+  /* Change la couleur au survol (optionnel) */
+  text-decoration: underline;
+  /* Ajoute un soulignement au survol */
+}
+
+a:active {
+  color: #ff5500;
+  /* Change la couleur quand le lien est cliqué */
+}
+
+/* email */
+
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+}
+
+textarea {
+  resize:none;
+}
+
+.name, .message {
+  margin-bottom: 1em;
+}
+
+/* body button */
 
 #body-button {
-    position:fixed;
-    top: 90%;
-    left: 90%;
-    background: #1F2020;
-    border: none;
-    border-radius: 180px;
-    padding: 10px 12px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  }
-  
-  #body-button:hover {
-    color: #1F2020;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    text-decoration: none;
-  }
-  
-  .arrow { 
-    filter: invert(1);
-    width:25px;
-  }
+  position:fixed;
+  top: 90%;
+  left: 95%;
+  background: #1F2020;
+  border: none;
+  border-radius: 180px;
+  padding: 10px 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  z-index: 1001;
+}
+
+#body-button:hover {
+  color: #1F2020;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+
+.arrow { 
+  filter: invert(1);
+  width:25px;
+}
+
+#terms {
+  max-width: 90%;
+}
+
+/* Media Queries */
+
+/* Format Tablette < 1280 px */
+@media screen and (max-width: 1280px)  {
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.container{
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+}
+
+.title {
+  font-size: 3.5rem;
+  max-width: 90%;
+}
+
+.card {
+  font-size: 1rem;
+}
+
+.subtitle {
+  font-size: 0.8rem;
+}
+
+.quiz-button {
+  padding: 10px 40px;
+  font-size: 1rem;
+}
+
+.button-text {
+  font-size: 16.5px;
+}
+
+.icon-menuBurgerLight {
+  width: 43px;
+}
+
+.light-logo {
+  width: 60px;
+}
+
+.nav-menu {
+  left: -30%;
+  width: 30%;
+}
+
+.nav-open {
+  left: 0;
+}
+
+.main-shift {
+  transform: translateX(40%);
+}
+
+.nav-menu a {
+  font-size: 1.3rem;
+}
+
+#body-button {
+  top: 90%;
+  left: 92%;
+}
+}
+
+/* Smartphone (largeur max < 600px) */
+@media screen and (max-width: 600px) {
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.container{
+  height: 100vh;
+}
+
+header {
+  width: 100%;
+}
+
+.title {
+  font-size: 3rem;
+  margin: 10px;
+  max-width: 400px;
+}
+
+.card {
+  padding: 40px;
+  margin: 20px;
+  font-size: 0.9rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 80%;
+}
+
+.subtitle {
+  font-size: 0.7rem;
+  margin: 0px;
+}
+
+.question-text {
+  font-size: 1.5rem;
+}
+
+.question {
+  font-size: 1.5rem;
+}
+
+.options {
+  margin-bottom: 0.3em;
+  margin-top: 0em;
+  margin-left: 0.7rem;
+  display: grid;
+  grid-row-gap: 0.3em;
+  grid-auto-columns: max-content;
+}
+
+.quiz-button {
+  padding: 8px 30px;
+  font-size: 0.8rem;
+}
+
+.button-text {
+  font-size: 20px;
+}
+
+.light-logo {
+  width: 60px;
+}
+
+.container{
+  height: 100vh;
+}
+
+#body-button {
+  top: 90%;
+  left: 89%;
+}
+
+.nav-menu {
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transition: top 0.3s ease;
+  border-bottom: #3F3C3C 2px solid;
+}
+
+.nav-menu li {
+  margin: 20px 0;
+}
+
+.nav-open {
+  top: 0;
+}
+
+.main-shift {
+  transform: translateY(300px);
+}
+
+}
