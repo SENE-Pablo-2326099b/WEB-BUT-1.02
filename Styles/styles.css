@@ -35,6 +35,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100rem;
+  width: 60rem;
 }
 
 .container {
@@ -251,6 +253,10 @@ input[type="radio"]:checked+label::after {
   margin: 1em;
 }
 
+.skibidi {
+  opacity: 0.2;
+}
+
 
 /*Navbar*/
 .navbar {
@@ -360,6 +366,7 @@ textarea {
 }
 
 /* body button */
+
 #body-button {
   position:fixed;
   top: 90%;
