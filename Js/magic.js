@@ -1,10 +1,10 @@
 let video = document.querySelector('.video');
 let playbackRate = 1.0;
 video.addEventListener('ended', function() {
-    video.currentTime = 0; // Reset the video to the beginning
-    playbackRate += 0.2; // Increase the playback rate
-    video.playbackRate = playbackRate; // Set the new playback rate
-    video.play(); // Play the video again
+    video.currentTime = 0;
+    playbackRate += 0.2;
+    video.playbackRate = playbackRate;
+    video.play();
 });
 
 video.addEventListener('click', function() {
@@ -19,8 +19,8 @@ video.addEventListener('click', function() {
     explosion.style.left = '50%';
     explosion.style.transform = 'translate(-50%, -50%)';
     explosion.style.zIndex = '1000';
-    explosion.style.width = '100%'; // Adjust the width
-    explosion.style.height = '100%'; // Adjust the height
+    explosion.style.width = '100%';
+    explosion.style.height = '100%';
     document.body.appendChild(explosion);
 
     // Play explosion sound
