@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This page is the result of your quiz." >
   <title>MOODIIFY</title>
-  <link rel="stylesheet" href="/Styles/styles.css">
-  <link rel="icon" href="Img/dark-logo.ico">
+  <link id="stylesheet" rel="stylesheet" href="/Styles/styles.css">
+  <link id="favicon" rel="icon" href="/assets/Img/dark-logo.ico">
 </head>
 <body>
   <div class="container">
@@ -13,20 +14,22 @@
     <header>
       <!-- NavBar -->
       <nav class="navbar">
-          <img class="icon-menuBurger" src="/Img/hamburgerNavbarIcon.png" alt="Menu" id="menuToggle">
-          <div class="nav-menu">
-              <ul>
-                  <li><a href="about.html">About Us</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                  <li><a href="terms.html">Terms And Policies</a></li>
-              </ul>
-          </div>
-      </nav>
-                      
+        <img class="icon-menuBurgerDark" src="/assets/Img/hamburgerNavbarIconDark.webp" alt="Menu" id="menuToggleDark">
+                    <img class="icon-menuBurgerLight" src="/assets/Img/hamburgerNavbarIconLight.webp" alt="Menu" id="menuToggleLight">
+        <div class="nav-menu">
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="terms.html">Terms And Policies</a></li>
+                <li><a href="#" id="changeStylesheet">Change Stylesheet</a></li>
+            </ul>
+        </div>
+    </nav>
       <p>
-          <a href="index.html">
-              <img class="logo" src="/Img/dark-logo.png" alt="/index.html">
-          </a>
+        <a href="index.html" class="logo">
+          <img class="dark-logo" src="/assets/Img/dark-logo.webp" alt="/index.html">
+                        <img class="light-logo" src="/assets/Img/light-logo.webp" alt="/index.html">
+  </a>
       </p>
   </header>
 
@@ -36,8 +39,8 @@
       
       <img src="https://image-cdn-fa.spotifycdn.com/image/ab67706c0000d72c7295ca31da597bb86a06c2a0" alt="Feel Good Songs" class="playlist-image">
 
-      <a href="https://open.spotify.com/playlist/7INcD4lmarWTQiDVodjVt4">
-        <button class="quiz-button"> <span class="button-text">Access <br>Playlist</span> </button>
+      <a href="https://open.spotify.com/playlist/7INcD4lmarWTQiDVodjVt4" class="quiz-button">
+        <span class="button-text">Access <br>Playlist</span>
       </a>
 
       <div class="card">
@@ -48,6 +51,9 @@
       </div>
     </main>
   </div>
+  <a id="body-button">
+    <img class="arrow" src="/assets/Img/up-arrow-icon.webp" alt="Back to top">
+</a>
   <script src="/Js/app.js"></script>
 </body>
 </html>
