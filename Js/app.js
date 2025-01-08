@@ -49,7 +49,6 @@ const changeStylesheet = () => {
         localStorage.setItem('favicon', 'Img/dark-logo.ico');
     }
 };
-
 const loadSavedStylesheet = () => {
     const savedStylesheet = localStorage.getItem('stylesheet');
     const savedFavicon = localStorage.getItem('favicon');
@@ -67,8 +66,10 @@ document.addEventListener('DOMContentLoaded', () => {
     loadSavedStylesheet();
 });
 
-const scr = document.getElementById('body-button');
 
+
+//Défilement smooth vers le haut de la page si on clicke sur le boouton de défilement
+const scr = document.getElementById('body-button');
 scr.addEventListener('click', () => {
 
     window.scrollTo({
